@@ -1,0 +1,420 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+.title{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	width: auto;
+	height: 10vh;
+}
+
+.logo{
+	position: absolute;
+	right: 100px;
+	top: 5px;
+}
+
+.menu{
+	position: absolute;
+	left: 100px;
+	top: 15px;
+	width: 55px;
+	height: 55px;
+}
+
+.cp_navi {
+	color: #888888;
+	display: block;
+	overflow: hidden;
+}
+.cp_navi ul {
+	margin: 0 10px;
+	padding: 1px;
+}
+.cp_navi ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.cp_navi ul li a {
+	color: #aaaaaa;
+	display: block;
+	line-height: 56px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.cp_navi ul li:hover a {
+	color: rgb( 255, 255, 255 );
+}
+.cp_navi ul li:hover a .caret {
+	border-top-color: rgb( 255, 255, 255 );
+}
+.cp_navi ul li div {
+	background-color: #064e48;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	margin: 0;
+	position: absolute;
+	width: auto;
+	z-index: 30;
+}
+
+.nav_visible{
+	display: block;
+}
+.nav_hidden{
+	display: none;
+}
+
+.cp_navi ul li div ul li {
+	display: block;
+}
+.cp_navi ul li div ul li a {
+	color: #ffffff;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+.cp_navi ul li div ul li:hover a {
+	background-color: rgba( 255, 255, 255, 0.1);
+}
+
+#closeBtn{
+	text-align: center;
+}
+
+#closeBtn a:hover, :visited{
+	background-color: rgba(255,255,255,0.5);
+	color: #fff;
+	text-decoration: none;	
+}
+
+.intro{
+	width: 100vw;
+	height: 90vh;
+	min-width: 1400px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.intro_l{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: url(../images/top_l.jpg) center no-repeat;
+	background-size: contain;
+}
+
+.intro_r{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: url(../images/top_r.jpg) center no-repeat;
+	background-size: contain;
+}
+
+.header_font{
+	font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN"; 
+	font-weight: bold;
+	color: #fff;
+}
+
+.title_r{
+	position: absolute;
+	z-index: 10;
+	font-size: 2.5em;
+	writing-mode: vertical-rl;
+	top: 30%;
+	left: 10%;
+	letter-spacing: 0.5em;
+}
+
+.title_l{
+	position: absolute;
+	z-index: 10;
+	font-size: 2.5em;
+	writing-mode: vertical-rl;
+	top: 30%;
+	right: 10%;
+}
+
+.date_l{
+	position: absolute;
+	z-index: 10;
+	font-size: 2em;
+	font-weight: 400;
+	bottom: 10%;
+	left: 300px;
+}
+
+.date_r{
+	position: absolute;
+	z-index: 10;
+	font-size: 2em;
+	font-weight: 400;
+	bottom: 10%;
+	right: 300px;
+}
+
+.time_l{
+	position: absolute;
+	z-index: 10;
+	font-size: 2em;
+	font-weight: 400;
+	top: 650px;
+	left: 280px;
+}
+
+.time_r{
+	position: absolute;
+	z-index: 10;
+	font-size: 2em;
+	font-weight: 400;
+	top: 650px;
+	right: 250px;
+}
+
+#main{
+	width: 1200px;
+	height: 1200px;
+	margin: 0 auto 50px;
+	position: relative;
+}
+
+.main_l{
+	height: 1100px;
+	width: 600px;
+	background: linear-gradient(to right,#3b3c34, #a38c79);
+	margin-top: 100px;
+	float: left;
+}
+	
+.main_l_p{
+	width: 500px;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	right: 600px;
+}
+
+.main_r{
+	height: 1100px;
+	width: 600px;
+	background: linear-gradient(to left,#85695e, #d68e4a);
+	margin-bottom: 100px;
+	float: right;
+}
+
+.main_r_p{
+	width: 500px;
+	height: 480px;
+	position: absolute;
+	bottom: 100px;
+	left: 600px;
+}
+
+.main_text{
+	font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN"; 
+	color: #fff;
+	font-size: 2em;
+	font-weight: 700;
+	writing-mode: vertical-rl;
+}
+
+.main_t_l{
+	position: absolute;
+	z-index: 10;
+	top: 650px;
+	left: 300px;
+}
+
+.main_t_l2{
+	position: absolute;
+	z-index: 10;
+	top: 750px;
+	left: 250px;
+}
+
+.main_t_r{
+	position: absolute;
+	z-index: 10;
+	top: 70px;
+	right: 300px;
+}	
+
+.main_t_r2{
+	position: absolute;
+	z-index: 10;
+	top: 170px;
+	right: 250px;
+}
+
+#last_bg{
+	width: auto;
+	height: 1420px;
+	background: #a6937c repeat bottom;
+}
+
+#Introduction{
+	width: 1000px;
+	height: auto;
+	margin: 20px auto 0;	
+	position: relative;
+}
+
+.in_r{
+	height: 500px;
+	width: 500px;
+	position: relative;
+	float: right;
+}
+
+.in_r_p{
+	height: 450px;
+	width: 450px;
+	margin-right: 25px; 
+}
+
+.in_l{
+	height: 500px;
+	width: 500px;
+	position: relative;
+	float: left;
+}
+
+.in_l_p{
+	height: 450px;
+	width: 450px;
+	margin-left: 25px;
+}
+
+.in_text_r{
+	position: absolute;
+	top: 225px;
+	right: 205px;
+}
+
+.in_text_l{
+	position: absolute;
+	top: 225px;
+	left: 185px;
+}
+
+a:link, :visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover{
+	background: #fff;
+}
+
+.in_font{
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.5;
+	display: block;
+	width: 150px;
+}
+
+.last_font{
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.shop_1{	
+	margin: 5px;
+}
+.shop_2{
+	margin: 5px;
+}
+
+#map{
+	width: 1000px;
+	height: 555px;
+	margin: 50px auto;
+	background: #d5c1aa repeat;
+}
+
+.ggmap_po{
+	padding: 20px 20px 20px 0;
+	float: right;
+}
+
+.ggmap{
+	width: 460px;
+	height: 520px;
+}
+
+.map_infor{
+	width: 500px;
+	height: 555px;
+	float: left;
+	font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN"; 
+}
+
+.infor_font{
+	color: #000;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 80px auto 50px;
+	line-height: 30px;
+}
+
+.box{
+	width: 300px;
+	height: 120px;
+	text-align: center;
+	background: #eae0d5;
+	margin: 60px auto;
+}
+
+.box_add{
+	font-size: 0.7em;
+	line-height: 38px;
+}
+
+.time{
+	margin: 50px auto;
+	width: 300px;
+	height: auto;
+}
+
+.time_po{
+	text-align: left;
+	margin: 15px auto;
+	border-bottom: 1px dotted;
+	}
+	
+.time_po2{
+	float: right;
+}
+
+.logo2{
+	width: 130px;
+	height: 150px;
+	margin: auto;
+}
+	
+.fin_logo2{
+	width: 130px;
+	height: 150px;
+}
+
+.kicha{
+	font-size: 0.6em;
+	text-align: center;
+}

@@ -1,0 +1,225 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+html , body{
+	height: 100%;
+}
+#header{
+	width: 100%; 
+	height: 10vh;
+}
+
+.content{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+}
+
+.logo{
+	position: absolute;
+	right: 100px;
+	top: 5px;
+}
+
+.menu{
+	position: absolute;
+	left: 100px;
+	top: 15px;
+	width: 55px;
+	height: 55px;
+}
+
+.cp_navi {
+	color: #888888;
+	display: block;
+	overflow: hidden;
+}
+.cp_navi ul {
+	margin: 0 10px;
+	padding: 1px;
+}
+.cp_navi ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.cp_navi ul li a {
+	color: #aaaaaa;
+	display: block;
+	line-height: 56px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.cp_navi ul li:hover a {
+	color: rgb( 255, 255, 255 );
+}
+.cp_navi ul li:hover a .caret {
+	border-top-color: rgb( 255, 255, 255 );
+}
+.cp_navi ul li div {
+	background-color: #064e48;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	margin: 0;
+	position: absolute;
+	width: auto;
+}
+
+.nav_visible{
+	display: block;
+}
+.nav_hidden{
+	display: none;
+}
+
+.cp_navi ul li div ul li {
+	display: block;
+}
+.cp_navi ul li div ul li a {
+	color: #ffffff;
+	display: block;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+.cp_navi ul li div ul li:hover a {
+	background-color: rgba( 255, 255, 255, 0.1);
+}
+
+#closeBtn{
+	text-align: center;
+}
+
+#closeBtn a:hover, :visited{
+	background-color: rgba(255,255,255,0.5);
+	color: #fff;
+	text-decoration: none;	
+}
+
+#left{
+	width: 50%;
+	height: 100%;
+	background: url("../images/type_tea.jpg") no-repeat center center/cover;
+	float: left;
+}
+#left img{
+	width: 100%;
+}
+
+.tea_menu{
+	width: 250px;
+	height: 400px;
+	background: rgba(255,255,255,0.5);
+	margin: 150px auto;
+}
+
+.menu_box{
+	border: 2px dotted;
+}
+
+.tea_font{
+	font-family: 'ヒラギノ明朝 Pro W6',sans-serif;
+	font-size: 1.4em;
+	color:#064e48;
+	line-height: 130px;
+	text-align: center; 
+	font-weight: bolder;
+}
+
+.tea_font a:link, :visited{
+	color: #064e48;
+	text-decoration: none;	
+}
+
+.tea_font a{
+	text-decoration: none;
+}
+
+a:hover{
+	background: #fff;
+	padding: 30px 60px;
+	background: rgba(255,255,255,0.5);
+	text-decoration: none;	
+}
+
+#right{
+	width: 50%;
+	height: 100%;
+	overflow: auto;
+}
+
+.tea_box{
+	width: auto;
+	height: auto;
+	margin: 30px auto;
+	padding-bottom: 30px;
+	border-bottom: dotted 2px #04322e;
+}
+
+.tea{
+	width: 500px;
+	height: 200px;
+	margin: 20px auto;
+	display: block;
+}
+	
+.tea_title{
+	font-family: 'ヒラギノ明朝 Pro W6',sans-serif;
+	color: #064e48;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.tea_text{
+	font-family: 'ヒラギノ明朝 Pro W6',sans-serif;
+	color: #064e48;
+	font-size: 1em;
+	text-align: center;
+	width: 500px;
+	height: auto;
+	margin: 10px auto;
+}
+
+.tea_type{
+	width: auto;
+	height: auto;
+	margin: 50px 30px 10px 30px;
+	text-align: left;
+	font-family: 'ヒラギノ明朝 Pro W6',sans-serif;
+	color: #064e48;
+}
+
+.type_s{
+	width: 50%; 
+	height: auto;
+}
+
+.tea_image{
+	width: 80px;
+	height: 80px;
+	padding: 5px 0;
+}
+
+.tea_pa{
+	float: right;
+	margin: auto;
+}	
+
+.tea_title_s{
+	font-size: 1em;
+	margin: 20px auto;
+}
+
+.tea_text_s{
+	font-size: 0.8em;
+	line-height: 15px;
+}
+
+.tea_image{
+	width: 80px;
+	height: 80px;
+	float: right;
+}
